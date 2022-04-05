@@ -1,4 +1,4 @@
-.header {
+.menu {
   background-image: url('../img/header.png');
 }
 
@@ -58,7 +58,9 @@ h2 {
   text-align: left;
 }
 
-
+.social {
+  text-align: center;
+}
 
 .copyright {
   color: white;
