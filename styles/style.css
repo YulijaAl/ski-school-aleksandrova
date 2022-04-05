@@ -2,6 +2,28 @@
   background-image: url('../img/header.png');
 }
 
+.menu-btn {
+  background-image: url('../img/menu-btn.png');
+}
+
+.menu-logo {
+  text-align: center;
+}
+
+.menu-phone {
+  text-align: right;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.product-text {
+  color: white;
+  text-align: center;
+}
+
 .product {
   background-image: url('../img/product.png');
 }
@@ -10,11 +32,35 @@
   background-image: url('../img/features.png');
 }
 
+h2 {
+  text-align: center;
+}
+
+.features-captiom {
+  text-align: left;
+}
+
 .order {
   background-image: url('../img/order.png');
+}
+
+.order-btn {
+  text-align: center;
+  background-image: url('../img/order-btn.png');
 }
 
 .footer {
   background-image: url('../img/footer.png');
 }
 
+.text-invitation {
+  color: white;
+  text-align: left;
+}
+
+
+
+.copyright {
+  color: white;
+  text-align: right;
+}
