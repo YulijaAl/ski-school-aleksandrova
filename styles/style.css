@@ -1,68 +1,177 @@
-.menu {
-  background-image: url('../img/header.png');
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/montserrat-v23-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v23-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* oswald-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/oswald-v47-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v47-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* body */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #060D10;
+}
+
+/* header */
+.header {
+  background: #66D1FF;
 }
 
 .menu-btn {
-  background-image: url('../img/menu-btn.png');
-}
-
-.menu-logo {
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: #060D10;
+}
+.menu-btn {
+  text-decoration: none;
+  color: #060D10;
 }
 
 .menu-phone {
-  text-align: right;
+  font-size: 28px;
+  line-height: 34px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: #060D10;
 }
 
-h1 {
-  color: white;
+/* product */
+/* не получается полная картинка */
+.product {
+  color: #FFFFFF;
+  align-items: center;
   text-align: center;
+  background: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)), url(../img/product.png);
+  width: 1440px;
+  height: 766px;
+}
+
+.product-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 .product-text {
-  color: white;
+  font-size: 32px;
+  line-height: 39px;
+  align-items: center;
   text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
-.product {
-  background-image: url('../img/product.png');
-}
+/* features */
 
 .features {
-  background-image: url('../img/features.png');
+  background-image: url(../img/features.png);
 }
 
-h2 {
+.features-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.features-captiom {
-  text-align: left;
+.features-caption {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 167%;
 }
+/* почему он больше визуально??? */
+.features-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* order */
 
 .order {
-  background-image: url('../img/order.png');
+  background-image: url(../img/order.png);
+}
+
+.order-invitation {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .order-btn {
+  font-size: 36px;
+  line-height: 44px;
+  align-items: center;
   text-align: center;
-  background-image: url('../img/order-btn.png');
 }
 
+.order-image {
+
+  width: 297px;
+  height: 297px;
+  box-shadow:rgba(0, 0, 0, 0.25);
+}
+
+/* footer */
+
 .footer {
-  background-image: url('../img/footer.png');
+  background-color: #060D10;
+  color: #FFFFFF;
 }
 
 .text-invitation {
-  color: white;
-  text-align: left;
-}
-
-.social {
+  font-size: 20px;
+  line-height: 33px;
   text-align: center;
 }
 
 .copyright {
-  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
   text-align: right;
+  mix-blend-mode: normal;
 }
