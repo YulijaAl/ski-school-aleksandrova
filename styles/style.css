@@ -41,12 +41,12 @@ body {
 .header {
   background: #66D1FF;
 }
-
+/* не получается слева-центр-справа !!! */
 .menu-btn {
   font-size: 24px;
   line-height: 29px;
   align-items: center;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   color: #060D10;
   background: #FFFFFF;
@@ -54,9 +54,15 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.menu-btn {
+
+.menu-logo {
   text-decoration: none;
-  color: #060D10;
+  width: 34.04px;
+  height: 50.76px;
+  align-items: center;
+  text-align: center;
+
+
 }
 
 .menu-phone {
@@ -64,19 +70,19 @@ body {
   line-height: 34px;
   text-decoration: none;
   align-items: center;
-  text-align: center;
+  text-align: right;
   color: #060D10;
 }
 
 /* product */
-/* не получается полная картинка */
 .product {
   color: #FFFFFF;
   align-items: center;
   text-align: center;
-  background: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)), url(../img/product.png);
+  background-image: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)),url(../img/product.png);
   width: 1440px;
   height: 766px;
+  background-size: cover;
 }
 
 .product-title {
@@ -100,6 +106,7 @@ body {
 
 .features {
   background-image: url(../img/features.png);
+  background-size: cover;
 }
 
 .features-title {
@@ -133,6 +140,7 @@ body {
 
 .order {
   background-image: url(../img/order.png);
+  background-size: cover;
 }
 
 .order-invitation {
@@ -146,11 +154,14 @@ body {
 }
 
 .order-btn {
+
   font-size: 36px;
   line-height: 44px;
   align-items: center;
   text-align: center;
-
+  border: 3px solid #060D10;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .order-image {
