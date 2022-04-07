@@ -34,6 +34,7 @@ body {
   font-style: normal;
   font-weight: 500;
   color: #060D10;
+
 }
 
 /* header */
@@ -48,6 +49,10 @@ body {
   text-align: center;
   text-decoration: none;
   color: #060D10;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .menu-btn {
   text-decoration: none;
@@ -102,7 +107,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  line-height: 167%;
+  line-height: 80px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -112,7 +117,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 167%;
+  line-height: 53px;
 }
 /* почему он больше визуально??? */
 .features-text {
@@ -121,7 +126,6 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 36px;
-  mix-blend-mode: normal;
   opacity: 0.8;
 }
 
@@ -146,6 +150,7 @@ body {
   line-height: 44px;
   align-items: center;
   text-align: center;
+
 }
 
 .order-image {
@@ -166,6 +171,10 @@ body {
   font-size: 20px;
   line-height: 33px;
   text-align: center;
+}
+
+.social-twitter {
+
 }
 
 .copyright {
