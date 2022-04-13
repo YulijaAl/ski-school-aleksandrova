@@ -27,67 +27,85 @@
        url('../fonts/oswald-v47-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* body */
+/* Common */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 500;
   color: #060D10;
-
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 
 /* header */
+
 .header {
-  background: #66D1FF;
+  padding: 31px 0 30.24px 0;
+  background-color: #66D1FF;
 }
-/* не получается слева-центр-справа !!! */
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-btn {
   font-size: 24px;
   line-height: 29px;
-  align-items: center;
-  text-align: left;
   text-decoration: none;
-  color: #060D10;
-  background: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 4px;
+  color: inherit;
+  /* border-color: #FFFFFF; */
 }
 
 .menu-logo {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
   text-decoration: none;
-  width: 34.04px;
-  height: 50.76px;
-  align-items: center;
-  text-align: center;
-
-
+  color: inherit;
 }
 
 .menu-phone {
   font-size: 28px;
   line-height: 34px;
   text-decoration: none;
-  align-items: center;
-  text-align: right;
-  color: #060D10;
+  color: inherit;
 }
 
 /* product */
 .product {
-  color: #FFFFFF;
-  align-items: center;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)),url(../img/product.png);
-  width: 1440px;
-  height: 766px;
+  color: #FFFFFF;
+  background-image: url(../img/product.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.product-fade {
+  padding: 240px 0 260px 0;
+  background-color: rgba(6, 13, 16, .25);
 }
 
 .product-title {
-  font-family: 'Oswald';
-  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
@@ -95,10 +113,9 @@ body {
 }
 
 .product-text {
+  margin-bottom: 0;
   font-size: 32px;
   line-height: 39px;
-  align-items: center;
-  text-align: center;
   text-shadow: 1px 1px 2px #060D10;
 }
 
@@ -106,30 +123,29 @@ body {
 
 .features {
   background-image: url(../img/features.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .features-title {
-  font-family: 'Oswald';
-  font-style: normal;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
-  text-align: center;
-  text-transform: uppercase;
+
 }
 
 .features-caption {
-  font-family: 'Oswald';
-  font-style: normal;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 53px;
+
 }
 /* почему он больше визуально??? */
+
 .features-text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 36px;
@@ -140,35 +156,31 @@ body {
 
 .order {
   background-image: url(../img/order.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .order-invitation {
-  font-family: 'Oswald';
-  font-style: normal;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
   text-align: center;
-  text-transform: uppercase;
+
 }
 
 .order-btn {
-
   font-size: 36px;
   line-height: 44px;
-  align-items: center;
   text-align: center;
   border: 3px solid #060D10;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
 .order-image {
-
   width: 297px;
   height: 297px;
-  box-shadow:rgba(0, 0, 0, 0.25);
 }
 
 /* footer */
@@ -191,7 +203,4 @@ body {
 .copyright {
   font-size: 18px;
   line-height: 22px;
-  align-items: center;
-  text-align: right;
-  mix-blend-mode: normal;
 }
