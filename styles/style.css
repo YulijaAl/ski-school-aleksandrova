@@ -37,6 +37,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #060D10;
+  margin: 0;
 }
 
 img {
@@ -47,9 +48,39 @@ img {
 .container {
   width: 1278px;
   margin: 0 auto;
-  border: 1px solid red;
+  border: 1px solid rgba(255, 0, 0, 0);
 }
 
+.btn {
+  display: inline-block;
+  padding: 6px;
+  min-width: 276px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #060D10;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.btn-transparent {
+  display: inline-block;
+  padding: 20px 0 22px 0;
+  min-width: 505px;
+  font-size: 36px;
+  line-height: 44px;
+  color: #060D10;
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 3px solid #060D10;
+  cursor: pointer;
+  margin: 0 0 130px 0;
+}
 
 /* header */
 
@@ -64,13 +95,7 @@ img {
   align-items: center;
 }
 
-.menu-btn {
-  font-size: 24px;
-  line-height: 29px;
-  text-decoration: none;
-  color: inherit;
-  /* border-color: #FFFFFF; */
-}
+
 
 .menu-logo {
   font-weight: 500;
@@ -102,6 +127,12 @@ img {
   background-color: rgba(6, 13, 16, .25);
 }
 
+.product-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-title {
   margin-top: 0;
   margin-bottom: 60px;
@@ -121,51 +152,85 @@ img {
 
 /* features */
 
-.features {
-  background-image: url(../img/features.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.features-fade {
+  padding: 170px 0 0 0;
+  background-color: rgba(102, 209, 255, .1);
 }
 
 .features-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 100px 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
+  text-transform: uppercase;
+}
+
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item {
+  flex-basis: calc(33% - 15px);
+  margin-bottom: 70px;
+  padding: 0px;
+  list-style: none;
+  min-width: 406px;
 
 }
 
 .features-caption {
+  margin-top: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 53px;
+  text-transform: uppercase;
 
 }
-/* почему он больше визуально??? */
+
 
 .features-text {
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 26px;
   line-height: 36px;
   opacity: 0.8;
 }
 
+.features-img {
+  margin-top: 100px ;
+}
+
 /* order */
 
 .order {
-  background-image: url(../img/order.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 170px 0 110px 0;
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
+}
+
+.order-wrap {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .order-invitation {
+  margin: 0 0 60px 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
+  text-transform: uppercase;
   text-align: center;
 
 }
@@ -178,9 +243,19 @@ img {
   border-radius: 4px;
 }
 
+.order-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .order-image {
-  width: 297px;
-  height: 297px;
+  flex-basis: calc(25% - 15px);
+  min-width: 293px;
+  min-height: 293px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  margin: 0 15px;
 }
 
 /* footer */
@@ -190,14 +265,38 @@ img {
   color: #FFFFFF;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link {
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+}
+
 .text-invitation {
   font-size: 20px;
   line-height: 33px;
   text-align: center;
 }
 
-.social-twitter {
+.social {
+  list-style: none;
 
+}
+
+
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .copyright {
