@@ -89,7 +89,7 @@ img {
   background-color: #66D1FF;
 }
 
-.header-wrap {
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,7 +127,7 @@ img {
   background-color: rgba(6, 13, 16, .25);
 }
 
-.product-wrap {
+.product-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,7 +217,7 @@ img {
   background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
 }
 
-.order-wrap {
+.order-flex {
   flex-direction: column;
   display: flex;
   justify-content: space-between;
@@ -251,11 +251,17 @@ img {
 
 .order-image {
   flex-basis: calc(25% - 15px);
-  min-width: 293px;
-  min-height: 293px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 0 15px;
+}
+
+.order-image:first-child {
+  margin-left: 0;
+}
+
+.order-image:last-child {
+  margin-right: 0;
 }
 
 /* footer */
@@ -265,30 +271,37 @@ img {
   color: #FFFFFF;
 }
 
-.footer-wrap {
+.footer-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-link {
- display: flex;
- align-items: center;
- flex-direction: row;
+  display: flex;
+  align-items: center;
 }
 
 .text-invitation {
   font-size: 20px;
   line-height: 33px;
-  text-align: center;
+
 }
 
 .social {
+  padding: 0;
+  display: flex;
   list-style: none;
 
 }
 
+.social-item {
+  margin-left: 20px;
+}
 
+.social-item:first-child {
+  margin-left: 50px;
+}
 
 .social-link {
   display: block;
@@ -300,6 +313,7 @@ img {
 }
 
 .copyright {
+  margin-left: auto;
   font-size: 18px;
   line-height: 22px;
 }
